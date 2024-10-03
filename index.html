@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Go || Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="fullBody">
-        <h1>Currency Converter</h1>
-        <div class="mainDiv">
-            <div class="convertForm">
-                <div class="leftDiv">
-                    <p >Select Currency</p>
-                    <select name="" id="currencySelect">
-                        <option value="usd">USD</option>
-                    </select>
-                </div>
-                <div class="rightDiv">
-                    <p>Enter Amount</p>
-                    <input type="number" class="amountBox">
-                </div>
-            </div>
-            <div class="convertTo">
-                <div class="leftDivConvertTo">
-                    <p >Select Currency</p>
-                    <select name="" id="currencySelectConverted">
-                        <option value="inr">INR</option>
-                    </select>
-                </div>
-                <div class="rightDivConvertTo">
-                    <p>Current Value</p>
-                    <input type="text" class="amountBoxConvertTo" readonly>
-                </div>
-            </div>
-            <div class="swapbutton">swap</div>
+      <h1>Currency Converter</h1>
+      <div class="mainDiv">
+        <div class="convertForm">
+          <div class="leftDiv">
+            <p>Select Currency</p>
+            <select name="" id="currencySelect" class="currencySelect" required>
+              <option value="usd" id="currency1" class="currencyOption">
+                select currency
+              </option>
+            </select>
+          </div>
+          <div class="rightDiv">
+            <p>Enter Amount</p>
+            <input type="number" class="amountBox" />
+          </div>
         </div>
+        <div class="convertTo">
+          <div class="leftDivConvertTo">
+            <p>Select Currency</p>
+            <select
+              name=""
+              id="currencySelectConverted"
+              class="currencySelect"
+              required
+            >
+              <option id="currency2" value="inr">INR</option>
+            </select>
+          </div>
+          <div class="rightDivConvertTo">
+            <p>Current Value</p>
+            <input type="text" class="amountBoxConvertTo" readonly />
+          </div>
+        </div>
+        <div class="swapbutton">swap</div>
+      </div>
     </div>
-
-    
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
